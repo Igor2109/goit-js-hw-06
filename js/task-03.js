@@ -13,7 +13,7 @@ const images = [
   },
 ];
 
-const El = document.querySelector(".gallery");
+const el = document.querySelector(".gallery");
 
 const markup = images
   .map(
@@ -23,5 +23,5 @@ const markup = images
   )
   .join("");
 
-El.insertAdjacentHTML("beforeend", markup);
+el.insertAdjacentHTML("beforeend", markup);
 console.log(markup);

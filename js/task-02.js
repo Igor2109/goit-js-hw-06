@@ -7,7 +7,7 @@ const ingredients = [
   "Condiments",
 ];
 
-const Elements = document.querySelector("#ingredients");
+const elements = document.querySelector("#ingredients");
 
 const createdUl = ingredients.map((el) => {
   let item = document.createElement("li");
@@ -17,7 +17,7 @@ const createdUl = ingredients.map((el) => {
   return item;
 });
 
-Elements.append(...createdUl);
+elements.append(...createdUl);
 
-console.log(Elements);
+console.log(elements);
 console.log(createdUl);
